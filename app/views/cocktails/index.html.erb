@@ -2,10 +2,10 @@
 <div>
 <ul class='list'>
   <% @cocktails.each do |cocktail| %>
-    <li ><%= cocktail.name %>
+    <li ><%= cocktail.name %> <%#= link_to '(delete)', cocktail_path(@cocktail), method: :delete %>
   <% end %>
 </li>
 </ul>
 </div>
 
-<%= link_to 'add a new cocktail', new_cocktail_path, {class: "btn btn-primary"} %>
+<%= link_to 'add a new cocktail', new_cocktail_path, {class: "btn btn-primary btn-lg"} %>
